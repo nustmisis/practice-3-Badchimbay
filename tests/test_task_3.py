@@ -14,4 +14,4 @@ tests: list[tuple[str, str]] = [
 def test_task_3():
     for phone, expected in tests:
         actual = task_3.format_phone_number(phone)
-        assert actual == expected
+        assert actual == expected, phone
